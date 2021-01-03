@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="myCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="lesson5" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="87" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="87" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7S-8M-Jwz">
+                        <rect key="frame" x="0.0" y="0.0" width="42" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="y6a-hx-veM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cv-DK-1YS">
+                        <rect key="frame" x="0.0" y="50" width="42" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="hNf-vL-3yN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkm-As-Z74">
+                        <rect key="frame" x="45" y="0.0" width="42" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="K1P-Xl-LbJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Dkm-As-Z74" firstAttribute="leading" secondItem="Q7S-8M-Jwz" secondAttribute="trailing" constant="3" id="C79-wq-dwN"/>
+                <constraint firstItem="Q7S-8M-Jwz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Svo-y2-GiP"/>
+                <constraint firstItem="Dkm-As-Z74" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UWq-jY-84t"/>
+                <constraint firstAttribute="trailing" secondItem="Dkm-As-Z74" secondAttribute="trailing" id="aFL-FK-tRM"/>
+                <constraint firstItem="3Cv-DK-1YS" firstAttribute="top" secondItem="Q7S-8M-Jwz" secondAttribute="bottom" constant="4" id="jUc-Ys-LxE"/>
+                <constraint firstAttribute="bottom" secondItem="3Cv-DK-1YS" secondAttribute="bottom" id="lT0-40-bHx"/>
+                <constraint firstItem="3Cv-DK-1YS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qby-hP-YKi"/>
+                <constraint firstItem="Q7S-8M-Jwz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="stQ-dh-zBJ"/>
+            </constraints>
+            <size key="customSize" width="87" height="96"/>
+            <connections>
+                <outlet property="age" destination="Q7S-8M-Jwz" id="CRV-ZK-kxx"/>
+                <outlet property="balance" destination="3Cv-DK-1YS" id="VX0-yB-DAo"/>
+                <outlet property="name" destination="Dkm-As-Z74" id="lAu-Ym-7mN"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="68.303571428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>
